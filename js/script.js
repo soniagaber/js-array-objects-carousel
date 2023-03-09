@@ -36,19 +36,24 @@ titoloEl.innerHTML=images[i].title;
 descrizioneEl.innerHTML=images[i].text;
 
 previousEl.addEventListener("click", function(){
-    if(i<images.length){
+    if(i<images.length -1){
         i++;
+    }else if( i==images.length -1){
+        i=0;
+    }
         immagineAttivaEl.src=images[i].image;
         titoloEl.innerHTML=images[i].title;
         descrizioneEl.innerHTML=images[i].text;
-    }
+    
 })
 
 nextEl.addEventListener("click", function(){
-    if(i>=0){
-        i--
-        immagineAttivaEl.src=images[i].image;
+    if(i>0){
+        i--;  
+    }else if( i==0){
+        i=images.length -1;
+    }
+    immagineAttivaEl.src=images[i].image;
         titoloEl.innerHTML=images[i].title;
         descrizioneEl.innerHTML=images[i].text;
-    }
 })
