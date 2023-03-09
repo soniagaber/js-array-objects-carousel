@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    width: 850px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    z-index: 2;
+    border: white;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+#previous{
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next{
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
